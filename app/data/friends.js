@@ -1,0 +1,23 @@
+[
+    {"name":"Thrall",
+    "photo":"https://wow.zamimg.com/uploads/screenshots/small/427164.jpg",
+    "answers[]":["5","1","1","5","3","4","3","4","5","4"]},
+    {"name":"Tracer","photo":"https://vignette.wikia.nocookie.net/heroesofthestorm/images/2/28/Tracer.jpg/revision/latest?cb=20151107080335",
+    "answers[]":["1","3","3","3","4","5","1","1","1","1"]},
+    {"name":"Sgt. Hammer","photo":"https://c.masterleague.net/media/hero/portrait/1458396330.jpg.160x240_q85_crop.jpg",
+    "answers[]":["5","1","1","5","5","1","5","5","5","5"]},
+    {"name":"Mario","photo":"http://www.lacasadeel.net/wp-content/uploads/2018/02/Super-Mario-Bros.jpg",
+    "answers[]":["1","5","3","3","3","3","1","2","1","3"]},
+    {"name":"Nunu","photo":"https://runes.lol/image/generated/championtiles/Nunu.jpg",
+    "answers[]":["3","4","4","3","4","1","3","3","1","2"]},
+    {"name":"Yuri","photo":"https://vignette.wikia.nocookie.net/callofduty/images/f/f1/Yuri_MW3_Model.jpg/revision/latest?cb=20120415040511",
+    "answers[]":["5","2","1","2","3","2","4","5","2","5"]},
+    {"name":"Pikachu","photo":"http://images5.fanpop.com/image/photos/31600000/Pikachu-with-pokeball-pikachu-31615402-2560-2245.jpg",
+    "answers[]":["3","5","5","1","2","2","2","1","3","4"]},
+    {"name":"Ceasar","photo":"https://www.metro.us/sites/default/files/styles/normal_article/public/caesar.jpg",
+    "answers[]":["4","4","2","4","4","1","5","4","1","4"]},
+    {"name":"Black Panter","photo":"https://www.pride.com/sites/www.pride.com/files/2017/04/19/black_panther_lgbtq_lesbian_comic-movie.jpg",
+    "answers[]":["2","2","4","3","3","3","3","3","3","1"]},
+    {"name":"Cicada3301","photo":"http://chris-kerns.com/wp-content/uploads/2017/07/1231507051321-1v2.jpg",
+    "answers[]":["3","2","5","2","3","5","4","5","1","2"]}
+]

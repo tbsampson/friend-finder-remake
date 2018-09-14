@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+	    <title>Friend Finder</title>
+	    <meta charset="UTF-8">
+	    <!-- Styles: Bootstrap, Chosen, Custom -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css">
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+	<body> <!-- ------------------------------------------------------------------------------------------------------------- Body-->
+		<div class="container" id="questionDiv">
+			<div class="row">
+				<div class="col-lg-12">
+					<h2>Survey Questions</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<h3>About You</h3>
+				</div>
+				<div class="col-lg-12">
+					<p>Name (Required)</p>
+					<input type="text" class="form-control" id="name" placeholder="Your Name">
+				</div>
+				<div class="col-lg-12">
+					<p>Link To Photo Image (Required)</p>
+					<input type="text" class="form-control" id="image" placeholder="Your Image">
+				</div>
+				</div>
+			</div>
+		</div>
+		<div id="myModal" class="modal fade" role="dialog">
+		 	<div class="modal-dialog">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+			        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        	<h2 class="modal-title"><strong>Your Best Match</strong></h2>
+			      	</div>
+			      	<div class="modal-body">
+			        	<div id="friendNameDiv"></div>
+			        	<img id="friendImg" class="img img-responsive" alt="" />
+			      	</div>
+			      	<div class="modal-footer">
+			        	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				   	</div>
+				</div>
+			</div>
+		</div>
+		<footer> <!-- ------------------------------------------------------------------------------------------------------- Footer-->
+			<div class="container">
+				<p>UT Coder Camp Friend Finder Homework</p>
+			</div>
+		</footer>
+		<!-- Scripts: jQuery, Chosen, Custom -->
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+	</body>
+</html>

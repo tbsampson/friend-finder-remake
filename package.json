@@ -1,0 +1,30 @@
+{
+  "name": "friend-finder-remake",
+  "version": "2.0.0",
+  "description": "Friend Finder for UT Coder Camp bootcamp.  This is a remake that will run on Heroku",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbsampson/friend-finder-remake"
+  },
+  "keywords": [
+    "express",
+    "node"
+  ],
+  "author": "Tom Sampson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tbsampson/friend-finder-remake/issues"
+  },
+  "homepage": "https://github.com/tbsampson/friend-finder-remake#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
