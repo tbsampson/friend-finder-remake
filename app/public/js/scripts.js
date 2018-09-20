@@ -1,6 +1,6 @@
 
 var questions = createQuestions();
-$('#myModal').modal()
+//$('#myModal').modal()
 function createQuestions() {
 	let q1 = "I am the life of the party.";
 	let q2 = "I feel little concern for others.";
