@@ -18,20 +18,24 @@ module.exports = function(app, path) {
 		    var friendFile = JSON.parse(data);
 		    var closestMatch = 0;
 		    var matchScore = 999999999999999;
-
+			console.log("looking for closest match")
 		    // find best match.
 		    for (var i = 0; i < friendFile.length; i++) {
+				
 		    	var spaceBetween = 0;
 		    	for (var j = 0; j < friendFile[i]['answers[]'].length; j++) {
-		    		spaceBetween += Math.abs((parseInt(req.body['answers[]'][j]) - parseInt(friendFile[i]['answers[]'][j])));
+					
+					spaceBetween += Math.abs((parseInt(req.body['answers[]'][j]) - parseInt(friendFile[i]['answers[]'][j])));
+					console.log(spaceBetween)
 				}
-
+				
 				if(spaceBetween <= matchScore) { matchScore = spaceBetween;	closestMatch = i; }
 		    }
-
-		    results.push(friendFile[closestMatch]);
+			console.log("Closest match", closestMatch)
+			results.push(friendFile[closestMatch]);
+			console.log(results)
 		    friendFile.push(JSON.parse(postResponse));
-		    fs.writeFile("app/data/friends.js", JSON.stringify(friendFile));
+		    //fs.writeFile("app/data/friends.js", JSON.stringify(friendFile));
 			res.send(results[0]);
 
 		});

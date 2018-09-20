@@ -1,6 +1,6 @@
 
 var questions = createQuestions();
-
+$('#myModal').modal()
 function createQuestions() {
 	let q1 = "I am the life of the party.";
 	let q2 = "I feel little concern for others.";
@@ -23,11 +23,11 @@ for ( var i = 0; i < questions.length; i++ ) {
 			<p>${questions[ i ]}</p>
 				<select class="chosen-select dropList" id="q${i}">
 					<option value=""></option>
-					<option value="1">1 (Strongly Disagree)</option>
+					<option value="1">1 (Agree Strongly)</option>
 					<option value="2">2</option>
-					<option value="3">3</option>
+					<option value="3" selected>3</option>
 					<option value="4">4</option>
-					<option value="5">5 (Strongly Agree)</option>
+					<option value="5">5 (Disagree Strongly)</option>
 				</select>
 		`);		
 }
@@ -80,9 +80,10 @@ $( "#submitButton" ).on( "click", function( event ) {
 		};
 		// Reveal match
 		$.post( "/api/friends", formAnswers, function( data ) {
-			$( "#friendNameDiv" ).html( `<h2>${data.name}</h2>` );
+			console.log(data)
+			$( "#friendNameDiv" ).html( "<h2>" + data.name + "</h2>" );
 			$( "#friendImg" ).attr( "src", data.photo );
-			$( "#myModal" ).modal( "toggle" );
+			$( "#myModal" ).modal( "show" );
 		} );
 	}
 	else {
